@@ -1,3 +1,4 @@
+/* Main page details */
 body {
     background-color: #212121;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -40,63 +41,29 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-img {
-    height: 200px;
-    justify-content: center;
-}
 
-/* for index */
-.container {
-    margin: 20px auto;
-    width: 50%;
-    text-align: center;
-}
-
-.container h2 {
-    color: #666666;
-}
-
-.news {
-    background-color: #666666;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.news h2 {
-    margin-bottom: 10px;
-}
-
-.news p {
-    line-height: 1.6;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: left;
-}
-
-/* for courses */
-#class_container {
+/* Tutorials */
+#tutorial {
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
-table {
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
     border-radius: 5px;
 }
 
-th, td {
+#tutorial ul {
+    list-style-type: none;
+    background-color: #e5e5e5;
     padding: 10px;
-    border-bottom: 1px solid #666666;
-}
-
-th {
-    background-color: #666666;
-    color: white;
-    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
