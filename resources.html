@@ -27,7 +27,16 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="container">
+            <h2>Upload Course Materials</h2>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="file">Choose File:</label>
+                <input type="file" id="file" name="file" accept=".pdf, .docx, .pptx">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
         
-        <script src="" async defer></script>
+        <script src="css/contact.css" async defer></script>
     </body>
 </html>
