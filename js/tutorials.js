@@ -1,17 +1,15 @@
-function searchTutorials() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('searchBar');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById('tutorialList');
-    li = ul.getElementsByTagName('li');
+document.getElementById('searchBar').addEventListener('input', function() {
+    var searchQuery = this.value.toLowerCase();
+    var tutorials = document.querySelectorAll('.tutorial');
 
-    // Loop through all list items, and hide those that don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("h2")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    tutorials.forEach(function(tutorial) {
+        var title = tutorial.querySelector('h2').innerText.toLowerCase();
+        var description = tutorial.querySelector('p').innerText.toLowerCase();
+
+        if (title.includes(searchQuery) || description.includes(searchQuery)) {
+            tutorial.style.display = 'block';
         } else {
-            li[i].style.display = "none";
+            tutorial.style.display = 'none';
         }
-    }
+    });
+});
